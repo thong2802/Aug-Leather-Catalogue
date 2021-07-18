@@ -292,6 +292,18 @@
               background-color: rgb(57, 55, 55);
          }
 
+         .copied {
+             display: flex;
+         }
+         .text_copied {
+             margin-top: 50px;
+             margin-right: 15px;
+             font-size: 15px;
+             font-style:normal;
+             font-weight: 500;
+             font-family: Gill Sans, sans-serif;
+             margin-bottom: 10px;
+         }
 
          /* Responsive Mobile */
          @media screen and (max-width: 1220px) {
@@ -803,10 +815,7 @@
                 <div> 
                     <p class="font_step" style="margin-top: 10px;">STEP 6: SHARE US YOUR SELECTIONS</p>  
                     <p class="font_size_checkbox" style="margin-top: 10px;">Copy this code us thought Instagram, Facebook or Whatsapp!</p>  
-                    <p class="select" style="margin-top: 10px;">Your Selections</p>  
-                     
-                    <button  type='button' class="btncoppy"  onclick="selectAndCopy()">Select and Copy</button> 
-                                  
+                    <p class="select" style="margin-top: 10px;">Your Selections</p>                
                 </div>  
            </div>
            <div class="cardResult" id="card">
@@ -837,8 +846,11 @@
 
             </div> 
     
-             <!-- Modal Box Finish-->
-             
+             <!-- Button coppy and Finish-->
+             <div class="copied">
+               <h4 class="text_copied">Copied</h4>       
+               <button  type='button' class="btncoppy"  onclick="selectAndCopy()">Select and Copy</button> 
+             </div>
         </div>    
         
     </form>
@@ -948,7 +960,7 @@
                selection.addRange(range);
                document.execCommand('Copy');
 
-               alert("Finish!");
+               alert("Your slection already copied to clipboard!");
               
              }
   
