@@ -194,16 +194,19 @@
         
           .checkbox__label {
             display: flex;
-            flex-direction:row;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 10px;
             text-align:center;
-            column-gap: 20px;
             cursor: pointer;
             margin-top: 50px;
          }
+        
          .checkbox__label1 {
-            display: flex;
-            flex-direction:row;
-            column-gap: 20px;
+            display: flex;   
+            
+            flex-wrap: wrap;
+            gap: 12px;
             cursor: pointer;
             margin-top: 50px;
          }
@@ -534,7 +537,7 @@
                 </div>
                    
                 <div class="">
-                    <a href="#" class="btn btn-next with-50 ml-auto">Next</a>
+                    <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-next with-50 ml-auto">Next</a>
                 </div>
             </div>
 
@@ -553,7 +556,7 @@
                      <!-- checkbox 1 -->
                      <div class="checkbox">
                         <label class="checkbox__label" for="myCheckboxId_1">
-                            <input type="checkbox" name="myCheckboxName_3" id="myCheckboxId_1" value="A1.Silver">
+                            <input class="input" type="checkbox" name="myCheckboxName_3" id="myCheckboxId_1" value="A1.Silver">
                             <div>
                             <img class="img_checkbox2" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/buckle-1_480x480.jpg?v=1627396533"alt="">  
                              <p class="font_size_step4">A1.Silver</p> 
@@ -720,8 +723,8 @@
                       
                 <!-- BTN -->
                <div class="btn-groups">
-                <a href="#" class="btn btn-back btnb">Back</a>
-                <a href="#" class="btn btn-next btnx">Next</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-back btnb">Back</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-next btnx">Next</a>
              </div>     
            </div>
 
@@ -878,8 +881,8 @@
          
                </div>  
                <div class="btn-groups">
-                <a href="#" class="btn btn-back btnb">Back</a>
-                <a href="#" class="btn btn-next btnx">Next</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-back btnb">Back</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-next btnx">Next</a>
              </div>    
            </div>
 
@@ -1058,8 +1061,8 @@
                     <!-- btn  -->
                </div>  
                <div class="btn-groups">
-                <a href="#" class="btn btn-back btnb">Back</a>
-                <a href="#" class="btn btn-next btnx">Next</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-back btnb">Back</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-next btnx">Next</a>
              </div>     
            </div>
 
@@ -1090,8 +1093,8 @@
                </div>
                   
                <div class="btn-groups">
-                <a href="#" class="btn btn-back btnb">Back</a>
-                <a href="#" class="btn btn-next btnx" onclick="getdata()">Next</a>
+                <a onclick="topFunction()" id="myBtn" href="#" class="btn btn-back btnb">Back</a>
+                <a id="myBtn"href="#" class="btn btn-next btnx" onclick="getdata();topFunction();">Next</a>
              </div>  
                
            </div>
@@ -1341,7 +1344,8 @@
           var lug_size = document.getElementById("lug_size");
           sessionStorage.setItem('lug_size', lug_size);
           
-
+            // onScrollTop
+           
   
    </script>
     
